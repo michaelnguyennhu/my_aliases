@@ -1,0 +1,34 @@
+############################################
+#
+# 	BASIC ALIASES - BASH
+#
+###################################################
+
+
+#################
+# Text Editors
+######################
+function te() { gnome-text-editor "$1" & }
+
+#################
+# Alias stuff
+######################
+alias addalias="te ~/.basic_aliases ~/.aliases ~/.bashrc &"
+alias srcbash="source ~/.bashrc"
+
+#################
+# Basics
+######################
+alias ls="ls --color=auto -l"
+alias lsa="ls -la"
+alias ll="ls -lrt"
+alias lla="ls -lart" 
+
+alias b="cd .." 
+alias rmrf="rm -rf" 
+
+#################
+# Git Config
+######################
+git config --global user.email "michael.nguyen.nhu@gmail.com"
+git config --global user.name "Michael Nguyen" 

@@ -1,0 +1,36 @@
+############################################
+#
+# 	ALIASES
+#
+###################################################
+
+#################
+# Windows Reboot
+######################
+alias rebootwindows='sudo grub-reboot "Windows Boot Manager (on /dev/nvme0n1p1)" && sudo reboot'
+
+#################
+# Settings
+######################
+alias razer-settings='polychromatic-controller &'
+
+#################
+# Teleport
+######################
+alias cdft="cd ~/projects/Fintech"
+
+#################
+# Open Project
+######################
+function op() { code ~/projects/Fintech/"$1" &}
+
+#################
+# Gatech
+######################
+alias cdgatech='cd ~/gatech'
+alias cdgios='cd ~/gatech/gios'
+alias cdp1='cd ~/gatech/gios/mnguyen656-pr1'
+
+alias rungios='docker run --rm -it --name gios -v "/home/michael-win/gatech/gios:/workspace" -w /workspace gtomscs6200/sum26-environment bash --init-file /workspace/.basic_aliases'
+alias newgios='docker exec -it gios bash --init-file /workspace/.basic_aliases'
+
